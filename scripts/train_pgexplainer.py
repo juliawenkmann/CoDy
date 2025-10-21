@@ -1,6 +1,6 @@
 import argparse
 
-from common import add_dataset_arguments, add_wrapper_model_arguments, create_ttgnn_wrapper_from_args, parse_args
+from time_to_explain.data.common import add_dataset_arguments, add_wrapper_model_arguments, create_ttgnn_wrapper_from_args, parse_args
 
 from cody.embedding import StaticEmbedding
 from cody.explainer.baseline.pgexplainer import TPGExplainer

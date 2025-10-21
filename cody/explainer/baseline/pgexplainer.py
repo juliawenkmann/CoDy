@@ -14,7 +14,7 @@ from cody.constants import COL_ID
 import torch.nn as nn
 import torch.optim
 
-from cody.utils import ProgressBar
+from time_to_explain.utils.utils import ProgressBar
 
 
 def fidelity(original_prediction, important_prediction):

@@ -15,7 +15,7 @@ from cody.explainer.baseline.common import greedy_highest_value_over_array, k_ho
 from cody.implementations.ttgn import TTGNWrapper
 from cody.constants import COL_TIMESTAMP, COL_NODE_U, COL_NODE_I, COL_ID
 from cody.explainer.base import Explainer
-from cody.utils import ProgressBar
+from time_to_explain.utils.utils import ProgressBar
 from TTGN.model.tgn import TGN
 
 

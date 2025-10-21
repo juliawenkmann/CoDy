@@ -13,7 +13,7 @@ from cody.explainer.greedy import GreedyCFExplainer, GreedyTreeNode
 from cody.selection import SelectionPolicy, LocalEventImpactSelectionPolicy
 from cody.explainer.cody import CoDy, CoDyTreeNode
 from cody.explainer.cody import find_best_non_counterfactual_example as find_best_non_cf_example
-from cody.utils import ProgressBar
+from time_to_explain.utils.utils import ProgressBar
 
 EVALUATION_STATE_CACHE = {}
 

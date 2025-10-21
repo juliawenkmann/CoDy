@@ -2,7 +2,7 @@ import numpy as np
 import torch
 
 from cody.implementations.connector import TGNNWrapper
-from cody.data import ContinuousTimeDynamicGraphDataset
+from time_to_explain.data.data import ContinuousTimeDynamicGraphDataset
 
 
 class Embedding:

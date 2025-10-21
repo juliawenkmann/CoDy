@@ -9,11 +9,11 @@ from typing import List
 import numpy as np
 import pandas as pd
 
-from cody.data import TrainTestDatasetParameters
+from time_to_explain.data.data import TrainTestDatasetParameters
 from cody.embedding import StaticEmbedding
-from cody.utils import ProgressBar
+from time_to_explain.utils.utils import ProgressBar
 
-from common import add_dataset_arguments, add_wrapper_model_arguments, create_dataset_from_args, parse_args, \
+from time_to_explain.data.common import add_dataset_arguments, add_wrapper_model_arguments, create_dataset_from_args, parse_args, \
     get_event_ids_from_file, column_to_int_array, column_to_float_array, create_ttgnn_wrapper_from_args
 
 from cody.explainer.baseline.pgexplainer import TPGExplainer, FactualExplanation

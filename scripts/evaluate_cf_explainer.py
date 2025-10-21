@@ -9,15 +9,15 @@ import numpy as np
 import pandas as pd
 
 from cody.constants import COL_ID, EXPLAINED_EVENT_MEMORY_LABEL
-from cody.data import TrainTestDatasetParameters
-from common import (add_dataset_arguments, add_wrapper_model_arguments, create_dataset_from_args,
+from time_to_explain.data.data import TrainTestDatasetParameters
+from time_to_explain.data.common import (add_dataset_arguments, add_wrapper_model_arguments, create_dataset_from_args,
                     create_tgnn_wrapper_from_args, parse_args, get_event_ids_from_file, SAMPLERS, column_to_int_array,
                     column_to_float_array)
 
 from scripts.evaluation_explainers import EvaluationExplainer, EvaluationCounterFactualExample, \
     EvaluationGreedyCFExplainer, EvaluationCoDy, EvaluationIRandExplainer
 import scripts.evaluation_explainers
-from cody.utils import ProgressBar
+from time_to_explain.utils.utils import ProgressBar
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()

@@ -3,8 +3,8 @@ import math
 
 from tqdm import tqdm
 
-from cody.data import TrainTestDatasetParameters
-from common import add_dataset_arguments, add_wrapper_model_arguments, parse_args, create_tgnn_wrapper_from_args, \
+from time_to_explain.data.data import TrainTestDatasetParameters
+from time_to_explain.data.common import add_dataset_arguments, add_wrapper_model_arguments, parse_args, create_tgnn_wrapper_from_args, \
     create_dataset_from_args
 import argparse
 
